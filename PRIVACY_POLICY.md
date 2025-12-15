@@ -116,7 +116,7 @@ Since we do not collect personal information, standard data rights (access, dele
 
 If you have questions about this Privacy Policy or the App's privacy practices:
 
-**Developer Contact**: [INSERT YOUR EMAIL]  
+**Developer Contact**: Nimish Pandey  
 **App Name**: US Civics Master 2025  
 **Package ID**: com.uscivicsmaster.app
 

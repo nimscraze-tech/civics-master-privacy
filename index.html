@@ -1,23 +1,191 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 <head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - US Civics Master 2025</title>
     <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: 50px auto; padding: 20px; line-height: 1.6; }
-        h1 { color: #002868; }
-        h2 { color: #002868; margin-top: 30px; }
-        p { margin: 10px 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #002868;
+            border-bottom: 3px solid #BF0A30;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #002868;
+            margin-top: 30px;
+        }
+        .last-updated {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        a {
+            color: #002868;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .summary {
+            background-color: #f0f4ff;
+            border-left: 4px solid #002868;
+            padding: 15px;
+            margin-top: 30px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
-    <iframe src='PRIVACY_POLICY.md' style='display:none;'></iframe>
-    <script src='https://cdn.jsdelivr.net/npm/marked/marked.min.js'></script>
-    <script>
-        fetch('PRIVACY_POLICY.md')
-            .then(response => response.text())
-            .then(text => { document.body.innerHTML = marked.parse(text); });
-    </script>
+    <div class="container">
+        <h1>Privacy Policy for US Civics Master 2025</h1>
+        <p class="last-updated">Last Updated: December 17, 2025</p>
+
+        <h2>Overview</h2>
+        <p>US Civics Master 2025 ("the App") is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use our application.</p>
+
+        <h2>Information We Do NOT Collect</h2>
+        <p><strong>The App does NOT collect, store, or transmit any personal information, including but not limited to:</strong></p>
+        <ul>
+            <li>Personal identification information (name, email, phone number)</li>
+            <li>Location data</li>
+            <li>Device identifiers (beyond what ad networks may use)</li>
+            <li>User account information (no accounts required)</li>
+            <li>Usage analytics</li>
+            <li>Study progress data (stored locally only)</li>
+        </ul>
+
+        <h2>Information Stored Locally</h2>
+        <p>The App stores the following data <strong>only on your device</strong> using Android's SharedPreferences:</p>
+        <ul>
+            <li>Your preferred app theme (light/dark mode)</li>
+            <li>Your selected civics test version (2008 or 2025)</li>
+            <li>Questions you have bookmarked</li>
+            <li>Questions marked for review</li>
+            <li>Your selected US state (optional, for location-aware content)</li>
+            <li>Text-to-speech settings (speed, enabled/disabled)</li>
+        </ul>
+        <p><strong>This data:</strong></p>
+        <ul>
+            <li>Never leaves your device</li>
+            <li>Is not transmitted to any server</li>
+            <li>Is not accessible to the developer</li>
+            <li>Is deleted if you uninstall the app</li>
+        </ul>
+
+        <h2>Third-Party Services</h2>
+        
+        <h3>Google AdMob</h3>
+        <p>The App displays advertisements using Google AdMob. AdMob may collect and use:</p>
+        <ul>
+            <li>Device advertising identifiers</li>
+            <li>IP address</li>
+            <li>Ad interaction data (clicks, impressions)</li>
+            <li>General device information (OS version, screen size)</li>
+        </ul>
+        <p><strong>AdMob's data collection is governed by:</strong></p>
+        <ul>
+            <li><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+            <li><a href="https://policies.google.com/technologies/ads" target="_blank">Google Ads Privacy Notice</a></li>
+        </ul>
+        <p>You can opt out of personalized advertising through your device settings:</p>
+        <ul>
+            <li><strong>Android</strong>: Settings → Google → Ads → Opt out of Ads Personalization</li>
+        </ul>
+
+        <h3>Firebase (Remote Config)</h3>
+        <p>The App uses Firebase Remote Config for app update prompts only. Firebase may collect:</p>
+        <ul>
+            <li>Anonymous app instance identifiers</li>
+            <li>Country-level location (not precise location)</li>
+            <li>App version information</li>
+        </ul>
+        <p>No personal data is collected through Firebase.</p>
+        <p><strong>Firebase Privacy Policy</strong>: <a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Information</a></p>
+
+        <h2>Permissions Required</h2>
+        <p>The App requests the following Android permissions:</p>
+        <ul>
+            <li><strong>INTERNET</strong>: Required to load advertisements and check for app updates</li>
+            <li><strong>ACCESS_NETWORK_STATE</strong>: Used to detect internet connectivity for ads</li>
+        </ul>
+        <p><strong>The App does NOT request:</strong></p>
+        <ul>
+            <li>Camera</li>
+            <li>Microphone</li>
+            <li>Contacts</li>
+            <li>Phone/SMS</li>
+            <li>Precise location</li>
+            <li>Storage (beyond standard app data)</li>
+        </ul>
+
+        <h2>Data Security</h2>
+        <ul>
+            <li>All local data is stored securely using Android's built-in storage mechanisms</li>
+            <li>No user data is transmitted over the network</li>
+            <li>The App uses HTTPS for any network requests (ads, Remote Config)</li>
+            <li>Code obfuscation (ProGuard) prevents unauthorized access to app internals</li>
+        </ul>
+
+        <h2>Children's Privacy</h2>
+        <p>The App does not knowingly collect personal information from anyone, including children under 13. The App is designed for educational purposes and does not require age verification or personal information.</p>
+
+        <h2>Content Attribution</h2>
+        <p>All civics test questions used in the App are works of the U.S. federal government and are in the public domain under 17 U.S.C. § 105. Questions are sourced from official USCIS naturalization test materials (2008 and 2025 versions).</p>
+
+        <h2>Government Affiliation Disclaimer</h2>
+        <p><strong>This app is not affiliated with, endorsed by, or sponsored by USCIS (U.S. Citizenship and Immigration Services), the Department of Homeland Security, or the U.S. Government.</strong></p>
+        <p>The App is an independent educational tool created for public benefit using publicly available government materials.</p>
+
+        <h2>Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Any changes will be posted within the App and on our distribution channels. Continued use of the App after changes constitutes acceptance of the updated policy.</p>
+
+        <h2>Your Rights</h2>
+        <p>Since we do not collect personal information, standard data rights (access, deletion, portability) do not apply. However:</p>
+        <ul>
+            <li>You can clear all local app data through Android Settings → Apps → US Civics Master 2025 → Storage → Clear Data</li>
+            <li>You can opt out of personalized ads through your device settings</li>
+            <li>You can uninstall the App at any time to remove all local data</li>
+        </ul>
+
+        <h2>Contact Information</h2>
+        <p>If you have questions about this Privacy Policy or the App's privacy practices:</p>
+        <p><strong>Developer</strong>: Educational Apps by NP<br>
+        <strong>App Name</strong>: US Civics Master 2025<br>
+        <strong>Package ID</strong>: com.uscivicsmaster.app</p>
+
+        <h2>Compliance</h2>
+        <p>This Privacy Policy complies with:</p>
+        <ul>
+            <li>Google Play Developer Program Policies</li>
+            <li>Google Play Data Safety requirements</li>
+            <li>General Data Protection Regulation (GDPR) principles</li>
+            <li>California Consumer Privacy Act (CCPA) principles</li>
+        </ul>
+
+        <h2>Disclaimer</h2>
+        <p>The App is provided "as is" for educational purposes. While we strive to ensure accuracy, users should verify all civics information with official USCIS sources before citizenship interviews.</p>
+
+        <div class="summary">
+            Summary: We don't collect your personal data. Ads may collect anonymous device info. Your study progress stays on your device. That's it.
+        </div>
+    </div>
 </body>
 </html>

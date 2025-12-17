@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Privacy Policy - US Civics Master 2025</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 50px auto; padding: 20px; line-height: 1.6; }
+        h1 { color: #002868; }
+        h2 { color: #002868; margin-top: 30px; }
+        p { margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <iframe src='PRIVACY_POLICY.md' style='display:none;'></iframe>
+    <script src='https://cdn.jsdelivr.net/npm/marked/marked.min.js'></script>
+    <script>
+        fetch('PRIVACY_POLICY.md')
+            .then(response => response.text())
+            .then(text => { document.body.innerHTML = marked.parse(text); });
+    </script>
+</body>
+</html>
